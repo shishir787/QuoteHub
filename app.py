@@ -9,6 +9,7 @@ quotes = [
     "The harder you work for something, the greater you’ll feel when you achieve it.",
     "Great things never come from comfort zones.",
     "Dream it. Wish it. Do it."
+    "Just do it"
 ]
 
 @app.route('/')
