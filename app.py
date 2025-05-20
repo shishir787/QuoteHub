@@ -4,13 +4,12 @@ import random
 app = Flask(__name__)
 
 quotes = [
-    "✧･ﾟ: *✧･ﾟ:* 　　 *:･ﾟ✧*:･ﾟ✧  
- "Be yourself;  
-  everyone else  
-  is already taken."  
-        — Oscar Wilde  
-✧･ﾟ: *✧･ﾟ:* 　　 *:･ﾟ✧*:･ﾟ✧
+    """✧･ﾟ: *✧･ﾟ:* 　　 *:･ﾟ✧*:･ﾟ✧<br>
 "
+🌟 Dream big.  
+    Work hard.  
+   Stay humble.  "
+✧･ﾟ: *✧･ﾟ:* 　　 *:･ﾟ✧*:･ﾟ✧"""
 ]
 
 @app.route('/')
