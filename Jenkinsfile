@@ -22,16 +22,19 @@ pipeline {
 
         stage('Push Docker Image') {
             steps {
-                script {
-                    sh 'docker push ${DOCKER_IMAGE}'
+                withCredentials([usernamePassword(credentialsId: 'dockerhub', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
+                    script {
+                        sh 'echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin'
+                        sh 'docker push ${DOCKER_IMAGE}'
+                    }
                 }
             }
         }
     }
+
     post {
         always {
-            cleanWs() // Clean up workspace after the build
+            cleanWs()
         }
     }
 }
-
