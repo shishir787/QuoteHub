@@ -4,12 +4,13 @@ import random
 app = Flask(__name__)
 
 quotes = [
-    "Push yourself, because no one else is going to do it for you.",
-    "Success is what comes after you stop making excuses.",
-    "The harder you work for something, the greater you’ll feel when you achieve it.",
-    "Great things never come from comfort zones.",
-    "Dream it. Wish it. Do it."
-    "just do it!"
+    "✧･ﾟ: *✧･ﾟ:* 　　 *:･ﾟ✧*:･ﾟ✧  
+ "Be yourself;  
+  everyone else  
+  is already taken."  
+        — Oscar Wilde  
+✧･ﾟ: *✧･ﾟ:* 　　 *:･ﾟ✧*:･ﾟ✧
+"
 ]
 
 @app.route('/')
