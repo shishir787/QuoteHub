@@ -6,7 +6,7 @@ app = Flask(__name__)
 quotes = [
     """✧･ﾟ: *✧･ﾟ:* 　　 *:･ﾟ✧*:･ﾟ✧<br>
 "
-🌟 Be kind and humble.  "
+🌟 Be your own light.  "
 ✧･ﾟ: *✧･ﾟ:* 　　 *:･ﾟ✧*:･ﾟ✧"""
 ]
 
